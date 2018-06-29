@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+    <div id="app">
+      <h2>Refs</h2>
+      <input type="text" ref="input" name="input">
+      <button v-on:click="readRefs">Submit</button>
+      <p>Your fav fodd: {{output}}</p>
+      <div ref='test'>hello</div>
+    </div>
+
+  </body>
+  <script src="app.js"></script>
+</html>
